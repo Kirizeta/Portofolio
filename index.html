@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Arif Musadi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="Porto-nav">
+      <div class="logo">Arif Musadi</div>
+       <div class="Porto-menu"></div>
+        <div class="Porto-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/arifpic1.png" alt="Arif profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Arif Musadi</h1>
+        <p class="section__text__p2">Student of majoring in Computer Science</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cv-arifmusadi.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/arif-musadi/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Kirizeta'"
+          />
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow1"
+        onclick="location.href='./#about'"
+      />
+    </section>
+
+
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/arifpic2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              A third-year student in Computer Science at Binus University with high interest in software 
+engineering fields such as mobile programming, front-end development, and Intelligent 
+Systems. Experienced in creating applications using Android Studio on Java language, made 
+Websites with PHP language, created an UI application using Figma, made and presented a 
+research paper at ICCSCI, and published the paper in Elsevier.
+
+            </p>
+          </div>
+          <br/>
+          <br/>
+          <div class="about-containers1">
+            <div class="details-container">
+              <img
+                src="./assets/binuslogo.png"
+                alt="Bina Nusantara"               
+                class="icon"
+              />
+              <h3>Bina Nusantara</h3>
+              <p>Bachelor of Computer Science</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow2"
+      onclick="location.href='./#projects'"
+    />
+    </section>
+    <br/><br/>
+
+  
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project One -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/Ngabur.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Ngabur</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Kirizeta/Ngabur_App.git'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.mediafire.com/file/6ab8qx9gy21ai0r/Ngabur.apk/file'">
+                Download APK
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project Two -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/Recipedia.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Recipedia</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Kirizeta/Recipedia.git'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.mediafire.com/file/16575pu9zjx6fv6/Recipedia.apk/file'">
+                Download APK
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project Three -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/ICCSCI.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">ICCSCI</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" 
+                onclick="window.open('./assets/Authors 51-76-3_001.png')">
+                View Certificate
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/8368-21935-3-DR.pdf')">
+                See research paper
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project Four -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/VClean.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">VClean</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Kirizeta/Vclean.git'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                Figma
+              </button>
+            </div>
+          </div>
+    
+          <!-- Project Five -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/piscisaquarium.png" alt="Project 5" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Piscis Aquarium</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Kirizeta/Piscis-Aquarium'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/file/HPc4yXh0CMIcuSOql9EAwm/HCI-Mandiri?type=design&node-id=0%3A1&mode=design&t=nR0zFmx71jl8ibbJ-1'">
+                Figma
+              </button>
+            </div>
+          </div>
+
+                    <!-- Project Six -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/MTgraphy.png" alt="Project 5" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">MTgraphy</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Kirizeta/MTgraphy'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/file/pm0aeONCj5Fnmasb7ReQ1J/HCI-Project?type=design&node-id=0-1&mode=design&t=nR0zFmx71jl8ibbJ-0'">
+                Figma
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>   
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow3"
+      onclick="location.href='./#contact'"
+    />
+    </section>
+    <br/><br/><br/>
+
+
+
+    
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+            onclick="location.href='mailto:muslimarif2@gmail.com'"
+          />
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+            onclick="location.href='https://www.linkedin.com/in/arif-musadi/'"
+          />
+          
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+            onclick="location.href='https://www.instagram.com/arifz871/'"
+          />
+          <div class="contact-info-container">
+            <img
+              src="./assets/facebook.png"
+              alt="Facebook icon"
+              class="icon contact face-icon"
+              onclick="location.href='https://www.facebook.com/arif.musadi.14/'"
+            />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
