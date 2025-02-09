@@ -16,7 +16,7 @@
   #desktop-nav {
     display: none;
   }
-  #hamburger-nav {
+  #Porto-nav {
     display: flex;
   }
   #experience,
@@ -27,9 +27,16 @@
   .section-container {
     display: block;
   }
-  .arrow {
+  .arrow1 {
     display: none;
   }
+  .arrow2 {
+    display: none;
+  }
+  .arrow3 {
+    display: none;
+  }
+
   section,
   .section-container {
     height: fit-content;
