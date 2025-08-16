@@ -19,30 +19,33 @@
         </ul>
       </div>
     </nav>
-    <nav id="Porto-nav">
+
+    <!-- Mobile / Porto nav -->
+    <nav id="Porto-nav" aria-label="Mobile Navigation">
       <div class="logo">Arif Musadi</div>
-       <div class="Porto-menu"></div>
-        <div class="Porto-icon" onclick="toggleMenu()">
+      <div class="Porto-menu">
+        <button class="Porto-icon" aria-label="Toggle menu" aria-expanded="false" aria-controls="porto-menu-links" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </button>
+        <ul id="porto-menu-links" class="menu-links" role="menu">
+          <li role="none"><a role="menuitem" href="#about" onclick="toggleMenu()">About</a></li>
+          <li role="none"><a role="menuitem" href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li role="none"><a role="menuitem" href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li role="none"><a role="menuitem" href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
       </div>
     </nav>
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/arifpic1.png" alt="Arif profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Arif Musadi</h1>
-        <p class="section__text__p2">Student of majoring in Computer Science</p>
+        <h1 class="title_nm">Arif Musadi</h1>
+        <p class="section__text__p2">Recent Computer Science Graduate </p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -91,12 +94,7 @@
         <div class="about-details-container">
           <div class="text-container">
             <p>
-              A third-year student in Computer Science at Binus University with high interest in software 
-engineering fields such as mobile programming, front-end development, and Intelligent 
-Systems. Experienced in creating applications using Android Studio on Java language, made 
-Websites with PHP language, created an UI application using Figma, made and presented a 
-research paper at ICCSCI, and published the paper in Elsevier.
-
+              I am Arif Musadi, with a bachelor degree in Computer Science from Binus University with high interest in software engineering fields such as mobile programming, front-end development, and Intelligent Systems. Experienced in creating applications using Android Studio on Java language, made Websites with PHP language, created an UI application using Figma, create and presented a research paper at ICCSCI, and published the paper in Elsevier.
             </p>
           </div>
           <br/>
@@ -128,7 +126,7 @@ research paper at ICCSCI, and published the paper in Elsevier.
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <!-- Project One -->
+          <!-- Project satu -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/Ngabur.png" alt="Project 1" class="project-img" />
@@ -144,7 +142,7 @@ research paper at ICCSCI, and published the paper in Elsevier.
             </div>
           </div>
     
-          <!-- Project Two -->
+          <!-- Project dua -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/Recipedia.png" alt="Project 2" class="project-img" />
@@ -160,7 +158,7 @@ research paper at ICCSCI, and published the paper in Elsevier.
             </div>
           </div>
     
-          <!-- Project Three -->
+          <!-- Project tiga -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/ICCSCI.png" alt="Project 3" class="project-img" />
@@ -177,7 +175,7 @@ research paper at ICCSCI, and published the paper in Elsevier.
             </div>
           </div>
     
-          <!-- Project Four -->
+          <!-- Project empat -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/VClean.png" alt="Project 4" class="project-img" />
@@ -187,29 +185,13 @@ research paper at ICCSCI, and published the paper in Elsevier.
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Kirizeta/Vclean.git'">
                 Github
               </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/design/mO2ffoAxxa2f1oSKkfJfxv/UI-VCLEAN?node-id=0-1&t=AnwqEGQDL8ElLGYD-1'">
                 Figma
               </button>
             </div>
           </div>
     
-          <!-- Project Five -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/piscisaquarium.png" alt="Project 5" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Piscis Aquarium</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Kirizeta/Piscis-Aquarium'">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/file/HPc4yXh0CMIcuSOql9EAwm/HCI-Mandiri?type=design&node-id=0%3A1&mode=design&t=nR0zFmx71jl8ibbJ-1'">
-                Figma
-              </button>
-            </div>
-          </div>
-
-                    <!-- Project Six -->
+          <!-- Project lima -->
           <div class="details-container color-container">
             <div class="article-container">
               <img src="./assets/MTgraphy.png" alt="Project 5" class="project-img" />
@@ -220,6 +202,22 @@ research paper at ICCSCI, and published the paper in Elsevier.
                 Github
               </button>
               <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/file/pm0aeONCj5Fnmasb7ReQ1J/HCI-Project?type=design&node-id=0-1&mode=design&t=nR0zFmx71jl8ibbJ-0'">
+                Figma
+              </button>
+            </div>
+          </div>
+
+         <!-- Project enam -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/natunatour.png" alt="Project 5" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Natuna Tour</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://natunatour.info/'">
+                Website
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/design/99a9V4Js4vToJ70HmPkyjD/Skripsi-final?t=GyQ57NmhKgsJZ5zC-1'">
                 Figma
               </button>
             </div>
@@ -235,9 +233,6 @@ research paper at ICCSCI, and published the paper in Elsevier.
     </section>
     <br/><br/><br/>
 
-
-
-    
     <section id="contact">
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -255,8 +250,7 @@ research paper at ICCSCI, and published the paper in Elsevier.
             alt="LinkedIn icon"
             class="icon contact-icon"
             onclick="location.href='https://www.linkedin.com/in/arif-musadi/'"
-          />
-          
+          />        
         </div>
         <div class="contact-info-container">
           <img
@@ -265,7 +259,8 @@ research paper at ICCSCI, and published the paper in Elsevier.
             class="icon contact-icon"
             onclick="location.href='https://www.instagram.com/arifz871/'"
           />
-          <div class="contact-info-container">
+        </div>
+        <div class="contact-info-container">
             <img
               src="./assets/facebook.png"
               alt="Facebook icon"
@@ -290,3 +285,4 @@ research paper at ICCSCI, and published the paper in Elsevier.
     <script src="script.js"></script>
   </body>
 </html>
+
