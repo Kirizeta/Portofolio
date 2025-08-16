@@ -135,6 +135,82 @@ a:hover {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
+
+/* --- Fixes for mobile hamburger menu --- */
+#Porto-nav {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+#Porto-nav .logo {
+  line-height: 1;
+}
+
+.Porto-menu {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.Porto-icon {
+  border: none;
+  background: transparent;
+  padding: 8px;
+  height: 32px;
+  width: 40px;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+}
+
+.Porto-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(.4,2,.3,1);
+}
+
+.Porto-icon.open span:first-child {
+  transform: rotate(45deg) translate(5px, 5px) scaleX(1.1);
+}
+
+.Porto-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.Porto-icon.open span:last-child {
+  transform: rotate(-45deg) translate(6px, -6px) scaleX(1.1);
+}
+
+.menu-links {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  width: max-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  z-index: 1000;
+}
+
+.menu-links.open {
+  max-height: 320px;
+}
+
+.menu-links li + li a {
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
 /* SECTIONS */
 
 section {
@@ -156,6 +232,13 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+}
+
+.title_nm {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .section__pic-container {
@@ -417,6 +500,7 @@ section {
   height: 2.5rem;
   cursor: pointer;
 }
+
 
 .face-icon {
   height: 2.5rem;
