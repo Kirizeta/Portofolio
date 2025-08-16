@@ -14,3 +14,7 @@ function toggleMenu() {
     const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
     window.open(url, "_blank");
   }
+
+  function openFacebook() {
+    window.open('https://www.facebook.com/arif.musadi.29', '_blank');
+  }
