@@ -12,6 +12,5 @@ function toggleMenu() {
     const subject = encodeURIComponent("Halo Arif");
     const body = encodeURIComponent("Halo, saya ingin bertanya...");
     const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${to}&su=${subject}&body=${body}`;
-    // buka tab baru
     window.open(url, "_blank");
   }
